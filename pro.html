@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Filter UI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <style>
+        .date-picker-btn {
+            background: #eaf6ff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            color: #111827;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .date-picker-btn:hover {
+            background: #d8efff;
+        }
+
+        .date-picker-btn span {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="filters">
+            <div class="select-box">
+                <select>
+                    <option>Category</option>
+                    <option>Cardiology</option>
+                    <option>Dermatology</option>
+                    <option>Neurology</option>
+                </select>
+            </div>
+            <div class="select-box">
+                <select>
+                    <option>Hospital</option>
+                    <option>City Hospital</option>
+                    <option>Green Clinic</option>
+                </select>
+            </div>
+            <div class="select-box">
+                <div class="date-picker-btn" id="dateBtn">
+                    <span id="dateText">Date</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+
+                <input type="text" id="hiddenDate" style="display:none;">
+            </div>
+            <div class="select-box">
+                <input type="time">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search ...">
+                <button class="search-btn">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        const dateBtn = document.getElementById("dateBtn");
+        const dateText = document.getElementById("dateText");
+        const hiddenDate = document.getElementById("hiddenDate");
+
+        // Flatpickr initialize
+        const fp = flatpickr(hiddenDate, {
+            dateFormat: "d-m-Y", // format (e.g. 31-08-2025)
+            onChange: function (selectedDates, dateStr) {
+                dateText.textContent = dateStr || "Date";
+            }
+        });
+
+        // যখন বাটনে ক্লিক হবে তখন ক্যালেন্ডার open হবে
+        dateBtn.addEventListener("click", () => {
+            fp.open();
+        });
+    </script>
+</body>
+
+</html>
