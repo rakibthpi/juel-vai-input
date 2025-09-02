@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function ($) {
   // $(document).on("click", function (event) {
   //   const $div = $("#outside-click");
@@ -240,6 +239,5 @@ jQuery(document).ready(function ($) {
 // $('.my-slider').on('setPosition', function () {
 //   setEqualHeight('.my-slider');
 // });
-
 
 

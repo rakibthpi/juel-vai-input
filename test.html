@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flatpickr Example</title>
+
+  <!-- Flatpickr CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+  <!-- Flatpickr JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+    .input-item {
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+    .form-control {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Date Picker -->
+  <div class="input-item">
+    <input type="text" class="date-picker form-control" placeholder="Pick a Date">
+  </div>
+
+  <!-- Time Picker -->
+  <div class="input-item">
+    <input type="text" class="time-picker form-control" placeholder="Pick a Time">
+  </div>
+
+  <script>
+    // Date Picker
+    flatpickr(".date-picker", {
+      dateFormat: "Y-m-d", // 2025-09-02 format
+      allowInput: true,
+      disableMobile: true // Mobile এ JS picker ব্যবহার করবে
+    });
+
+    // Time Picker
+    flatpickr(".time-picker", {
+      enableTime: true,
+      noCalendar: true,
+      dateFormat: "H:i", // 24hr format
+      time_24hr: true,
+      allowInput: true,
+      disableMobile: true // Mobile এ JS picker ব্যবহার করবে
+    });
+  </script>
+</body>
+</html>

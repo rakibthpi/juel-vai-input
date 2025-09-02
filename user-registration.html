@@ -326,9 +326,10 @@
         $("#preloader").delay(500).fadeOut("slow");
         $("body").delay(500).css({opacity: 1});
       });
-      flatpickr("#dateOfBirth", {
+       flatpickr("#dateOfBirth", {
         dateFormat: "Y-m-d",
         allowInput: true,
+        disableMobile: true,
       });
 
       const fileInput = document.getElementById("chooseFile");

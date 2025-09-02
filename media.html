@@ -731,21 +731,17 @@
       flatpickr(".date-picker", {
         dateFormat: "Y-m-d",
         allowInput: true,
+        disableMobile: true,
       });
-      document.addEventListener("DOMContentLoaded", function () {
-        const timeInput = document.querySelector(".time-picker");
 
-        if (timeInput) {
-          timeInput.addEventListener("change", (e) => {
-            console.log("Selected Time:", e.target.value);
-          });
-        }
-      });
+      // Time Picker
       flatpickr(".time-picker", {
         enableTime: true,
         noCalendar: true,
         dateFormat: "H:i",
         time_24hr: true,
+        allowInput: true,
+        disableMobile: true,
       });
     </script>
   </body>
