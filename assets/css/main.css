@@ -1479,3 +1479,14 @@ select {
 .filter-item .time-wrapper input{
    background-color: #e6f4fe;
 }
+.registration-customdropdown{
+  position: relative;
+}
+.registration-showdropdown {
+    position: absolute;
+    top: 77% !important;
+    right: 36px !important;
+}
+.registration-customdropdown {
+    padding: 11px 21px !important;
+}

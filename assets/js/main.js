@@ -145,10 +145,10 @@ jQuery(document).ready(function ($) {
     dots: true,
     arrows: false,
     infinite: true,
-    speed: 1000,
+    speed: 5000,
     slidesToShow: 3,
     adaptiveHeight: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 1,
     cssEase: "linear", // Smooth easing (no acceleration)
     responsive: [
@@ -171,10 +171,10 @@ jQuery(document).ready(function ($) {
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 1000,
+    speed: 5000,
     slidesToShow: 3,
     adaptiveHeight: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 1,
     cssEase: "linear", // Smooth easing (no acceleration)
     responsive: [
@@ -197,10 +197,10 @@ jQuery(document).ready(function ($) {
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 1000,
+    speed: 5000,
     slidesToShow: 3,
     adaptiveHeight: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 1,
     cssEase: "linear", // Smooth easing (no acceleration)
     responsive: [
