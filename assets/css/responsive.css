@@ -63,6 +63,22 @@
   .mision-text-box {
     margin-top: 0px;
   }
+  .filter-item input,
+  .filter-item input::placeholder {
+    padding: 8px 10px !important;
+    font-size: 16px !important;
+    overflow: hidden;
+    border-radius: 12px !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+  .filter-item .date-wrapper {
+    border-radius: 12px;
+  }
+  .filter-item .input-item{
+    border-radius: 12px;
+  }
 }
 @media screen and (max-width: 1199px) {
   #navbarText {
@@ -388,4 +404,10 @@
     max-width: 200px;
     width: 100%;
   }
+  .filter-item .time-wrapper,
+  .filter-item .date-wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+  
 }

@@ -1461,14 +1461,16 @@ select {
 }
 .filter-item input,
 .filter-item input::placeholder {
-  color: #000000 !important;
+  color: #000000c7 !important;
   padding: 12px 10px !important;
+  font-weight: 400 !important;
   font-size: 16px !important;
 
 }
 .filter-item .date-wrapper{
   max-width: 160px;
   background-color: #e6f4fe;
+  border-radius: 12px;
 }
 .filter-item .date-wrapper input{
   background-color: #e6f4fe;
@@ -1478,6 +1480,7 @@ select {
 }
 .filter-item .time-wrapper input{
    background-color: #e6f4fe;
+   border-radius: 12px;
 }
 .registration-customdropdown{
   position: relative;
