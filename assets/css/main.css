@@ -1468,4 +1468,14 @@ select {
 }
 .filter-item .date-wrapper{
   max-width: 160px;
+  background-color: #e6f4fe;
+}
+.filter-item .date-wrapper input{
+  background-color: #e6f4fe;
+}
+.filter-item .time-wrapper{
+  max-width: 170px;
+}
+.filter-item .time-wrapper input{
+   background-color: #e6f4fe;
 }
